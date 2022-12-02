@@ -1,0 +1,135 @@
+.contenedorGreen {
+  background-color: #20bf55;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  min-height: 555px;
+}
+
+.contenedorGreen b {
+  color: #283618;
+}
+
+.contenedorRed {
+  background-color: #01baef;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  min-height: 555px;
+}
+
+.contenedorImg img {
+  padding-top: 10px;
+}
+
+.contenedorImg {
+  background-color: white;
+  border-radius: 100%;
+  padding: 25px;
+  height: 250px;
+  width: 250px;
+  color: #283618;
+}
+
+.contenedorImg p {
+  margin: 0px !important;
+  font-weight: 700;
+}
+
+.contenedorRed h3 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: fit-content;
+  color: #283618;
+}
+
+.contenedorTimerParticipante {
+  margin-top: 10px;
+  padding: 10px;
+  /* text-align: left; */
+  background-color: white;
+  border-radius: 5px;
+  color: #283618;
+  width: 60px;
+  font-weight: 700;
+}
+
+.contenedorWhite {
+  background-color: #e3e3e3;
+  padding: 25px;
+  border-radius: 10px;
+  color: #283618;
+  min-height: 555px;
+  /* border: #bc6c25 4px solid; */
+}
+
+.contenedorWhiteReloj {
+  background-color: white;
+  border-radius: 100%;
+  padding-top: 25%;
+  width: 180px;
+  height: 100px;
+  color: #283618;
+}
+
+.contenedorWhite h1 sub {
+  font-size: 15px;
+}
+
+.contenedorDetalle {
+  padding: 15px;
+  /* text-align: left; */
+  background-color: white;
+  border-radius: 5px;
+}
+
+.contenedorDetalle h4,
+.contenedorDetalle p {
+  margin: 1px;
+}
+
+.MuiButtonContainedSuccess {
+  background-color: #20bf55 !important;
+}
+
+.MuiButtonContainedPrimary {
+  background-color: #01baef !important;
+}
+
+.MuiButtonContainedError {
+  background-color: #fb3640 !important;
+}
+
+.MuiButtonContainedWarning {
+  background-color: #ff6b35 !important;
+}
+
+.colorBlue {
+  color: #01baef !important;
+}
+
+.colorGreen {
+  color: #20bf55 !important;
+}
+
+.zoomInOutBox {
+  /* margin: 24px;
+  width: 50px;
+  height: inherit;
+  background: #f50057; */
+  animation: zoom-in-zoom-out 4s ease infinite;
+  border-radius: 100%;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.7, 0.7);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.7, 0.7);
+  }
+}
