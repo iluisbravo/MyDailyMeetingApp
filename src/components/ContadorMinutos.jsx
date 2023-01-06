@@ -1,6 +1,8 @@
 import { Button, Grid } from '@mui/material';
 import React, { useState } from 'react';
-import styles from './App.module.css'
+import styles from './App.module.css';
+import moment from 'moment';
+import 'moment/dist/locale/es';
 
 const ContadorMinutos = ({ listaParticipantes, setUsuarioTieneLaPalabra }) => {
     const [status, setStatus] = useState(0);
@@ -91,6 +93,11 @@ const ContadorMinutos = ({ listaParticipantes, setUsuarioTieneLaPalabra }) => {
         return `${minutes}:${String(Math.abs(seconds)).padStart(2, '0')} min`
     }
 
+    const getCurrentDate = () => {
+        let date = moment().locale('es').format('DD/MMM/YYYY')
+        return date;
+    }
+
     return (
         <>
             <Grid container spacing={2}>
@@ -156,9 +163,10 @@ const ContadorMinutos = ({ listaParticipantes, setUsuarioTieneLaPalabra }) => {
                             <div className={styles.contenedorDetalle}>
                                 <h4>📅 Detalle Daily 🕒</h4>
                                 <br></br>
+                                <p><b>Fecha:  </b>{getCurrentDate()}</p>
                                 <p><b>Duración:  </b>{getDuracionDaily(minutes, seconds)}</p>
                                 <p><b>Participantes:</b> {listaParticipantes.length}</p>
-                                <br></br>
+                                {/* <br></br> */}
                                 <h4>Muchas Gracias 👨🏻‍💻</h4>
                             </div>
                         </Grid>
